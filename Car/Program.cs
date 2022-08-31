@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ICar seat = new Seat("Red", "Orange");
+            ICar porsche = new Porsche("Taycan", "Red", 2);
+            Console.WriteLine(seat.ToString());
+            Console.WriteLine(porsche.ToString());
         }
     }
 }
